@@ -1,0 +1,80 @@
+!!! XML
+!!! 1.1
+%html{ :xmlns => "http://www.w3.org/1999/xhtml", "xml:lang".to_sym => "en" }
+  %head
+    %meta{ "http-equiv" => "content-type", :content => "text/html; charset=utf-8" }
+    %title Portland JavaScript Admirers
+    %link{ :rel => "stylesheet", :href => "/css/screen.css", :type => "text/css", :media => "screen, projection" }
+  %body
+    .title
+      %h1 Portland JavaScript Admirers
+
+    .section
+      %p 
+        We meet monthly to discuss topics on JavaScript and ECMAscript ranging
+        from client-side web frameworks, to functional and prototypal programming
+        theory. Meetings take place on the last Wednesday of every month from 7-9pm at
+        %a{ :href => "http://calagator.org/venues/202389907" } Cubespace
+        \.
+
+      %p
+        Topics slated for the first meeting on January 28th include:
+    
+      %ul
+        %li SproutCore - An overview of this new client-side web application framework
+        %li JavaScript: The Good Parts - Tips on how to write beautiful JavaScript from the book by Douglas Crockford
+        %li jQuery 1.3 - New features in the web's most dynamic DOM library
+        %li CouchDB - An introduction to the world of document-oriented databases
+    
+      %p
+        More topics are welcome! If you would like to give a presentation, or
+        have a suggestion for a topic, please send a message to 
+        %a{ :href => "mailto:pdxjs@googlegroups.com" } pdxjs@googlegroups.com
+        \.
+    
+      %p
+        And feel free to join our mailing list at 
+        %a{ :href => "http://groups.google.com/group/pdxjs" } http://groups.google.com/group/pdxjs
+        if you too are a JavaScript admirer.
+
+    .section
+      %h2 Calendar
+      %a{ :rel => "calendar", :type => "application/json", :href => "http://calagator.org/events/search.json?tag=pdxjs" }
+	
+    .section
+      %h2 Topics
+      #topics
+
+    .section
+      %h2 Resources
+
+      %p
+        Join the mailing list at
+        %a{ :href => "http://groups.google.com/group/pdxjs" } http://groups.google.com/group/pdxjs
+        \.
+
+      %p 
+        Interested in CouchDB? Set up your own database on our public server at
+        %a{ :href => "http://couchdb.pdxjs.com/_utils" } http://couchdb.pdxjs.com/_utils
+        \. We only ask that you are respectful of other people's data.
+
+      %p
+        Check your code against jslint online at
+        %a{ :href => "http://www.jslint.com/" } http://www.jslint.com/
+        to catch potential errors early. Or download the jslint plugin for Vim from
+        %a{ :href => "http://github.com/hallettj/jslint.vim/" } http://github.com/hallettj/jslint.vim/
+        \.
+
+      %p
+        Find out about other groups and events in Portland on
+        %a{ :href => "http://calagator.org/" } Calagator
+        \.
+
+    .footer
+      %span{ "xmlns:dc".to_sym => "http://purl.org/dc/elements/1.1/", :href => "http://purl.org/dc/dcmitype/InteractiveResource", :property => "dc:title", :rel => "dc:type" } pdxjs.com
+      by 
+      %a{ "xmlns:cc".to_sym => "http://creativecommons.org/ns#", :href => "http://pdxjs.com/", :property => "cc:attributionName", :rel => "cc:attributionURL" } Portland JavaScript Admirers contributers
+      is licensed under a
+      %a{ :rel => "license", :href => "http://creativecommons.org/licenses/by-sa/3.0/us/" }
+        Creative Commons Attribution-Share Alike 3.0 United States License
+      \.
