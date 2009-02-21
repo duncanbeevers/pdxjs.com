@@ -56,6 +56,7 @@ Date.prototype.strftime_f = {
 		m: function (d) { return (d.getMonth()+1).pad(2,'0') },
 		n: function (d) { return "\n" },
 		p: function (d) { return (d.getHours() > 11) ? 'PM' : 'AM' },
+		P: function (d) { return (d.getHours() > 11) ? 'pm' : 'am' },
 		R: function (d) { return d.strftime_f.H(d) + ':' + d.strftime_f.M(d) },
 		r: function (d) {
 				return d.strftime_f.I(d) + ':' + d.strftime_f.M(d) + ':' +
