@@ -63,7 +63,7 @@ var Calagator = {
              return '<a rel="venue" type="application/json" href="' + this.data.venue_id + '" />';
            },
     description: function() {
-                   return '<p class="description">' + this.data.description + '</p>';
+                   return '<p class="description">' + this.data.description.replace(/\n/g, '<br />') + '</p>';
                  },
     iso8601: function(time) {
                var tz_offset = time.toString().match(/([+\-]\d+)/);
