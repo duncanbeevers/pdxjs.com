@@ -32,8 +32,15 @@
       %h2 Calendar
       %a{ :rel => "calendar", :type => "application/json", :href => "http://calagator.org/events/search.json?tag=pdxjs" }
       %p
-        %a{ :href => "http://calagator.org/events/search?tag=pdxjs" }
-          Follow the Portland JavaScript Admirers on Calagator.
+        Follow the Portland JavaScript Admirers on
+        = succeed ',' do
+          %a{ :href => "http://calagator.org/events/search?tag=pdxjs" } Calagator
+        = succeed ',' do
+          %a{ :href => "http://www.google.com/calendar/render?cid=http%3A%2F%2Fcalagator.org%2Fevents%2Fsearch.ics%3Ftag%3Dpdxjs" } subscribe via Google Calendar
+        = succeed ', or' do
+          %a{ :href => "http://add.my.yahoo.com/content?.intl=us&url=http%3A%2F%2Fcalagator.org%2Fevents%2Fsearch.ics%3Ftag%3Dpdxjs" } subscribe via My Yahoo!
+        = succeed '.' do
+          %a{ :href => "webcal://calagator.org/events/search.ics?tag=pdxjs" } subscribe to the ical feed
 
     .section
       %h2 Reporting from the Closures
