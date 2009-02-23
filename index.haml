@@ -14,8 +14,8 @@
         We meet monthly to discuss topics on JavaScript and ECMAscript ranging
         from client-side web frameworks, to functional and prototypal programming
         theory. Meetings take place on the last Wednesday of every month from 7-9pm at
-        %a{ :href => "http://calagator.org/venues/202389907" } Cubespace
-        \.
+        = succeed '.' do
+          %a{ :href => "http://calagator.org/venues/202389907" } CubeSpace
 
       %p
         Our next meeting will be on February 25th. Topics are still up in the air; so
@@ -85,15 +85,16 @@
 
       %p
         The code examples that I am pointing at in the video are online at
-        %a{ :href => "http://gist.github.com/64478" } http://gist.github.com/64478
-        \.
+        = succeed '.' do
+          %a{ :href => "http://gist.github.com/64478" } http://gist.github.com/64478
 
       <object width="400" height="302"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=3139648&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=3139648&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="302"></embed></object>
 
       %p
         Scott Becker told us all about the features of 
-        %a{ :href => "http://www.sproutcore.com/" } SproutCore
-        , which is an
+        = succeed ',' do
+          %a{ :href => "http://www.sproutcore.com/" } SproutCore
+        which is an
         MVC framework for browser-side applications. Among other things,
         SproutCore allows you to set up models for your data, which can act as
         an intermediary to transfer data to and from a server, or that can
@@ -116,22 +117,22 @@
 
       %p
         The slides from Scott's talk are online at
-        %a{ :href => "http://www.slideshare.net/joydivider/sproutcore-a-next-gen-javascript-framework" }
-          http://www.slideshare.net/joydivider/sproutcore-a-next-gen-javascript-framework
-        \.
+        = succeed '.' do
+          %a{ :href => "http://www.slideshare.net/joydivider/sproutcore-a-next-gen-javascript-framework" } http://www.slideshare.net/joydivider/sproutcore-a-next-gen-javascript-framework
 
       <object width="400" height="302"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=3188440&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=3188440&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="302"></embed></object>
 
       %p
         I went over the new features in 
-        %a{ :href => "http://docs.jquery.com/Release:jQuery_1.3" }jQuery 1.3
-        \. Many speed improvements
+        = succeed '.' do
+          %a{ :href => "http://docs.jquery.com/Release:jQuery_1.3" } jQuery 1.3
+        Many speed improvements
         have been made in this release. For example, the selector engine is 49%
         faster. And HTML injection into the document is a blazing 6 times
         faster. The new, faster selector engine has been broken out into its
         own project called 
-        %a{ :href => "http://sizzlejs.com/" }Sizzle
-        \.
+        = succeed '.' do
+          %a{ :href => "http://sizzlejs.com/" } Sizzle
         
       %p
         This release also includes a complete rewrite of the event system. In
@@ -156,8 +157,9 @@
       %p
         Finally, J. Chris Anderson graciously jumped in to give us an
         introduction to
-        %a{ :href => "http://couchdb.apache.org/" } CouchDB
-        , a document-oriented database. CouchDB stores all of its data as JSON.
+        = succeed ',' do
+          %a{ :href => "http://couchdb.apache.org/" } CouchDB
+        a document-oriented database. CouchDB stores all of its data as JSON.
         There is no schema, and there are no tables. Queries are performed
         using the MapReduce pattern and can be written as stored JavaScript
         procedures.
@@ -201,25 +203,26 @@
 
       %p
         Join the mailing list at
-        %a{ :href => "http://groups.google.com/group/pdxjs" } http://groups.google.com/group/pdxjs
-        \.
+        = succeed '.' do
+          %a{ :href => "http://groups.google.com/group/pdxjs" } http://groups.google.com/group/pdxjs
 
       %p 
         Interested in CouchDB? Set up your own database on our public server at
-        %a{ :href => "http://pdxjs.com:5984/_utils" } http://pdxjs.com:5984/_utils
-        \. We only ask that you are respectful of other people's data.
+        = succeed '.' do
+          %a{ :href => "http://pdxjs.com:5984/_utils" } http://pdxjs.com:5984/_utils
+        We only ask that you are respectful of other people's data.
 
       %p
         Check your code against jslint online at
         %a{ :href => "http://www.jslint.com/" } http://www.jslint.com/
         to catch potential errors early. Or download the jslint plugin for Vim from
-        %a{ :href => "http://github.com/hallettj/jslint.vim/" } http://github.com/hallettj/jslint.vim/
-        \.
+        = succeed '.' do
+          %a{ :href => "http://github.com/hallettj/jslint.vim/" } http://github.com/hallettj/jslint.vim/
 
       %p
         Find out about other groups and events in Portland on
-        %a{ :href => "http://calagator.org/" } Calagator
-        \.
+        = succeed '.' do
+          %a{ :href => "http://calagator.org/" } Calagator
 
     .footer
       %p
@@ -227,14 +230,13 @@
         by 
         %a{ "xmlns:cc".to_sym => "http://creativecommons.org/ns#", :href => "http://pdxjs.com/", :property => "cc:attributionName", :rel => "cc:attributionURL" } Portland JavaScript Admirers contributers
         is licensed under a
-        %a{ :rel => "license", :href => "http://creativecommons.org/licenses/by-sa/3.0/us/" }
-          Creative Commons Attribution-Share Alike 3.0 United States License
-        \.
+        = succeed '.' do
+          %a{ :rel => "license", :href => "http://creativecommons.org/licenses/by-sa/3.0/us/" } Creative Commons Attribution-Share Alike 3.0 United States License
 
       %p
         The source for this website is hosted on Github at
-        %a{ :href => "http://github.com/hallettj/pdxjs.com/" } http://github.com/hallettj/pdxjs.com/
-        \. To make contributions, fork the code and send a pull request.
+        = succeed '.' do
+          %a{ :href => "http://github.com/hallettj/pdxjs.com/" } http://github.com/hallettj/pdxjs.com/
 
     %script{ :type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" }
     %script{ :type => "text/javascript", :src => "/js/strftime.js" }
