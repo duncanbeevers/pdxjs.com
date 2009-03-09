@@ -34,12 +34,12 @@ var Calagator = {
   Item: {
     create: function(data, calendar) {
               var item = Object.create(this),
-                  start_time = new Date(data.start_time),
+                  start_time = item.parse_date(data.start_time),
                   now = new Date();
               if (start_time > now) {
                 item.data = data;
-                item.start_time = new Date(data.start_time);
-                item.end_time   = new Date(data.end_time);
+                item.start_time = item.parse_date(data.start_time);
+                item.end_time   = item.parse_date(data.end_time);
                 item.calendar = calendar;
                 item.calendar.container.append('<div class="vevent">' + item.summary() + item.start_and_end() + item.venue() + item.description() + '</div>');
                 item.calendar.events.push(this);
@@ -72,8 +72,15 @@ var Calagator = {
                } else {
                  return time.strftime('%Y-%m-%dT%H:%M:%S');
                }
-             }
-        }
+             },
+    parse_date: function(date) {
+                    var prepared;
+                    prepared = date.replace(/T/, ' ');
+                    prepared = prepared.replace(/-/, '/');
+                    prepared = prepared.replace(/-/, '/');
+                    return (new Date(prepared));
+                }
+  }
 };
 
 jQuery(document).ready(function() {
